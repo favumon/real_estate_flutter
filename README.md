@@ -1,16 +1,16 @@
 # real_estate_app
 
-A new Flutter project.
 
-## Getting Started
+<p float="left">
+  <img src="" width="300" />
+  
+  <img src="https://github.com/favumon/real_estate_flutter/assets/2209460/560d7022-ad0d-4dde-bed7-1df973a303e7" width="300" /> 
+  
+  <img src="https://github.com/favumon/real_estate_flutter/assets/2209460/ae834b9b-e6fb-4415-80ec-50b40c1095f5" width="300" /> 
+  
+  <img src="https://github.com/favumon/real_estate_flutter/assets/2209460/c3e9019e-e91f-4e2f-bac1-02c058d18086" width="300" />   
+  
+  
+ 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</p>
