@@ -11,28 +11,28 @@ class BuyOfferCountUpTimer extends StatefulWidget {
 
 class _BuyOfferCountUpTimerState extends State<BuyOfferCountUpTimer> {
 
-  int buyCount=0;
-  final maxBuyCount=1034;
-  late Timer timer;
+  int _buyCount=0;
+  final _maxBuyCount=1034;
+  late Timer _timer;
   @override
   void initState() {
     super.initState();
-   timer= Timer.periodic(const Duration(milliseconds: 5), (timer) {
+   _timer= Timer.periodic(const Duration(milliseconds: 5), (timer) {
     setState(() {
-            buyCount++;
+            _buyCount++;
     });
-      if(buyCount>maxBuyCount) {
+      if(_buyCount>_maxBuyCount) {
         timer.cancel();
       }
     },);
   }
   @override
   void dispose() {
-    timer.cancel();
+    _timer.cancel();
     super.dispose();
   }
   @override
   Widget build(BuildContext context) {
-    return Text(buyCount.toString());
+    return Text(_buyCount.toString());
   }
 }

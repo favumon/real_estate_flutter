@@ -11,28 +11,28 @@ class RentOfferCountUpTimer extends StatefulWidget {
 
 class _RentOfferCountUpTimerState extends State<RentOfferCountUpTimer> {
 
-  int rentCount=800;
-  final maxRentCount=2210;
-  late Timer timer;
+  int _rentCount=800;
+  final _maxRentCount=2210;
+  late Timer _timer;
   @override
   void initState() {
     super.initState();
-   timer= Timer.periodic(const Duration(milliseconds: 3), (timer) {
+   _timer= Timer.periodic(const Duration(milliseconds: 3), (timer) {
     setState(() {
-            rentCount++;
+            _rentCount++;
     });
-      if(rentCount>maxRentCount) {
+      if(_rentCount>_maxRentCount) {
         timer.cancel();
       }
     },);
   }
   @override
   void dispose() {
-    timer.cancel();
+    _timer.cancel();
     super.dispose();
   }
   @override
   Widget build(BuildContext context) {
-    return Text(rentCount.toString());
+    return Text(_rentCount.toString());
   }
 }

@@ -21,13 +21,14 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: Colors.green,
-        gradient: LinearGradient(end: Alignment.topLeft,begin: Alignment.bottomRight,colors:[
-          Color(0xffF9E8D4),
-          Color(0xffF8F8F8),
-        ])
-      ),
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(
+              end: Alignment.topLeft,
+              begin: Alignment.bottomRight,
+              colors: [
+            Color(0xffF9E8D4),
+            Color(0xffF8F8F8),
+          ])),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         floatingActionButton: FloatingTabBar(
@@ -38,7 +39,7 @@ class _DashboardState extends State<Dashboard> {
           },
           selectedTab: this.tab,
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         body: _getPage(tab),
       ),
     );
