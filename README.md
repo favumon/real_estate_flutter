@@ -1,5 +1,8 @@
 # real_estate_app
-Dibble Url used for the Mockup: https://dribbble.com/shots/23780608-Real-Estate-App
+
+A Mockup Real Estate App with Animations
+
+Dibble: https://dribbble.com/shots/23780608-Real-Estate-App
 
 <p float="left">
   
